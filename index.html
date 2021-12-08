@@ -11,7 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="CSS/responsive.css">
-   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <meta property="og:image" content="Assets/smalSize.png">
         <meta property="og:image:type" content="image/jpeg">
         <meta property="og:image:width" content="400">
@@ -22,22 +24,49 @@
 <body>
   <div id="mainContainer">
 
+    <!-- The overlay -->
+<div id="myNav" class="overlay">
 
-    <div id="navbar">
-        <a href="#">HOME</a>
-        <a href="#">ABOUT US</a>
-        <a href="#">STATEMENT OF FAITH</a>
-        <a href="#">TESTIMONIALS</a>
-        <a href="#">PODCAST</a>
-        <a href="#">DESCIPLE</a>
-        <a href="#">CONTACT US</a>
-    </div>
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT US</a>
+    <a href="#">STATEMENT OF FAITH</a>
+    <a href="#">TESTIMONIALS</a>
+    <a href="#">PODCAST</a>
+    <a href="#">DESCIPLE</a>
+    <a href="#">CONTACT US</a>
+  </div>
+
+</div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+<span class="openNav" onclick="openNav()">
+  <div class="burger"></div>
+  <div class="burger"></div>
+  <div class="burger"></div>
+</span>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8679;</button>
       <!--End of MainContainer-->
       </div>
+<div class="lldMain">
+  <img src="Assets/LogoLLD.png" alt="Logo of LLD" width="120px" class="logoQ">
+</div>
+
+
+
+
+
+
+
+
     <div class="lastQuote">Business is complicated, your web solutions can be  simple.<a href="https://yegorcreative.com/" target="__blank"> @YegorCreative2021</a></div>
     <script src="JavaScript/app.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js'></script><script  src="./script.js"></script>
+    
    
 </body>
 </html>
